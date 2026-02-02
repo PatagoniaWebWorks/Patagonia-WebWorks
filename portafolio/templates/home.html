@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Diseño y desarrollo de páginas web profesionales en la Patagonia Argentina y Chile. Sitios modernos, rápidos y optimizados para SEO local.">
+    <link rel="canonical" href="https://TU-DOMINIO.com/">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/9293a98292.js" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <title>Patagonia WebWorks | Desarrollo Web Profesional en la Patagonia</title>
+</head>
+<body>
+    <header class="header" id="main-header">
+        <div class="menu container">
+            <a href="#main-header" class="logo">Patagonia<span class="logo-accent">WebWorks</span></a>
+            <input type="checkbox" id="menu-toggle" aria-controls="navbar" aria-expanded="false" />
+            <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú de navegación">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="menu-overlay"></div>
+            <nav class="navbar" id="navbar">
+                <div class="mobile-menu-header">
+                    <span class="logo-mobile">Menú</span>
+                    <label for="menu-toggle" class="close-menu-btn"><i class="fa-solid fa-xmark"></i></label>
+                </div>
+                <ul>
+                    <li><a href="#main-header" class="nav-link active">Home</a></li>
+                    <li><a href="#MODELOS" class="nav-link">Servicios</a></li>
+                    <li><a href="#PROCESO" class="nav-link">Proceso</a></li>
+                    <li><a href="#FORM" class="nav-cta nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container">
+            <div class="hero-text scroll-reveal">
+                <span class="badge-hero">🚀 Soluciones Digitales</span>
+                <h1>Transformamos ideas en <br> <span class="text-gradient">Experiencias Web</span></h1>
+                <p class="hero-sub">
+                    Desarrollo de Páginas Web Profesionales y Aplicaciones Web a medida.
+                    <br class="hide-mobile" />
+                    Diseños <strong>elegantes</strong>, <strong>rendimiento real</strong> y atención personalizada.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#FORM" class="btn btn-primary">Quiero mi página web</a>
+                    <a href="#MODELOS" class="btn btn-ghost">Ver servicios</a>
+                </div>
+                <div class="hero-trust">
+                    <span class="chip"><i class="fa-solid fa-bolt"></i> Entrega rápida</span>
+                    <span class="chip"><i class="fa-solid fa-headset"></i> Soporte incluido</span>
+                    <span class="chip"><i class="fa-solid fa-magnifying-glass-chart"></i> Optimizado SEO</span>
+                </div>
+            </div>
+            <div class="hero-mock container-mock scroll-reveal delay-200">
+                <img src="{{ url_for('static', filename='img/header_complejo.png') }}" alt="Mockup de sitio web en dispositivos" class="hero-mock-img" />
+            </div>
+        </div>
+    </header>
+    <section id="INICIO" class="que-ofrecemos container-section">
+        <div class="section-header scroll-reveal">
+            <h2 class="ofrecemos-titulo">¿Qué ofrecemos?</h2>
+            <p class="ofrecemos-subtitulo">Trabajar con emprendedores, comercios y empresas, desarrollando páginas web profesionales optimizadas. Ofrecemos soluciones digitales para negocios de todo tipo, adaptadas al mercado local.</p>
+        </div>
+        <div class="ofrecemos-grid">
+            <div class="ofrecemos-item scroll-reveal delay-100">
+                <div class="icon-box">
+                    <i class="fa-solid fa-code icon"></i>
+                </div>
+                <h3>Diseño y Desarrollo Web</h3>
+                <p>Desarrollo de sitios modernos y personalizados, con enfoque en usabilidad y resultados medibles.</p>
+            </div>
+            <div class="ofrecemos-item scroll-reveal delay-200">
+                <div class="icon-box">
+                    <i class="fa-solid fa-shield-halved icon"></i>
+                </div>
+                <h3>Seguridad y Optimización</h3>
+                <p>Buenas prácticas de seguridad, performance y estabilidad para que tu sitio funcione sin sorpresas.</p>
+            </div>
+            <div class="ofrecemos-item scroll-reveal delay-300">
+                <div class="icon-box">
+                    <i class="fa-solid fa-chart-line icon"></i>
+                </div>
+                <h3>SEO y Rendimiento</h3>
+                <p>Estructura cargada para posicionamiento, optimización de assets y tiempos de carga reducidos.</p>
+            </div>
+            <div class="ofrecemos-item scroll-reveal delay-400">
+                <div class="icon-box">
+                    <i class="fa-solid fa-headset icon"></i>
+                </div>
+                <h3>Soporte y Mantenimiento</h3>
+                <p>Planes de mantenimiento, actualizaciones y soporte técnico para mantener todo al día.</p>
+            </div>
+        </div>
+        <div class="tech-logos scroll-reveal">
+            <img src="{{ url_for('static', filename='img/html.png') }}" alt="HTML5" class="img-inicio" title="HTML5" />
+            <img src="{{ url_for('static', filename='img/css.png') }}" alt="CSS3" class="img-inicio" title="CSS3" />
+            <img src="{{ url_for('static', filename='img/js.png') }}" alt="JavaScript" class="img-inicio" title="JavaScript" />
+            <img src="{{ url_for('static', filename='img/python.png') }}" alt="Python" class="img-inicio" title="Python" />
+            <img src="{{ url_for('static', filename='img/php.png') }}" alt="PHP" class="img-inicio" title="PHP" />
+            <img src="{{ url_for('static', filename='img/sql.png') }}" alt="SQL" class="img-inicio" title="SQL" />
+        </div>
+    </section>
+    <section id="MODELOS" class="container-section">
+        <div class="titulo-modelos scroll-reveal">
+            <h2>¿Qué realizamos?</h2>
+            <p>Desde landings hasta tiendas online y aplicaciones a medida.</p>
+        </div>
+        <div class="cards-wrapper">
+            <div class="landing-card card scroll-reveal" data-service-type="Landing Page">
+                <div class="card-header-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                <h4>Landing Page</h4>
+                <p>Enfocadas en conversión: captación de leads y campañas puntuales.</p>
+                <button class="details-btn" aria-label="Ver detalles de Landing Page">Ver detalles</button>
+            </div>
+            <div class="blog-card card scroll-reveal delay-100" data-service-type="Blog">
+                <div class="card-header-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                <h4>Blog</h4>
+                <p>Contenidos organizados y optimizados para mejorar tu posicionamiento.</p>
+                <button class="details-btn" aria-label="Ver detalles de Blog">Ver detalles</button>
+            </div>
+            <div class="portfolio-card card scroll-reveal delay-200" data-service-type="Portafolio">
+                <div class="card-header-icon"><i class="fa-solid fa-images"></i></div>
+                <h4>Portafolio</h4>
+                <p>Presenta tu trabajo con un diseño visual que convenza a clientes.</p>
+                <button class="details-btn" aria-label="Ver detalles de Portafolio">Ver detalles</button>
+            </div>
+            <div class="business-site-card card scroll-reveal" data-service-type="Sitio Web de Negocios">
+                <div class="card-header-icon"><i class="fa-solid fa-building"></i></div>
+                <h4>Sitio Web para Negocios</h4>
+                <p>Sitios web profesionales para negocios locales, restaurantes, y empresas, con secciones de servicios, equipo, contacto y posicionamiento en Google. </p>
+                <button class="details-btn" aria-label="Ver detalles de Sitio Web de Negocios">Ver detalles</button>
+            </div>
+            <div class="ecommerce-card card scroll-reveal delay-100" data-service-type="Tienda en Línea">
+                <div class="card-header-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h4>Tienda en Línea</h4>
+                <p>Catálogo, carrito y pasarelas de pago integradas para vender en línea.</p>
+                <button class="details-btn" aria-label="Ver detalles de Tienda en Línea">Ver detalles</button>
+            </div>
+            <div class="contact-page-card card scroll-reveal delay-200" data-service-type="Página de Contacto">
+                <div class="card-header-icon"><i class="fa-regular fa-address-card"></i></div>
+                <h4>Página de Contacto</h4>
+                <p>Formularios y acciones rápidas para convertir consultas en clientes.</p>
+                <button class="details-btn" aria-label="Ver detalles de Página de Contacto">Ver detalles</button>
+            </div>
+        </div>
+    </section>
+    <div id="info-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Cerrar ventana modal" type="button"><i class="fa-solid fa-times"></i></button>
+            <h5 id="modal-title">Título del Servicio</h5>
+            <div class="modal-body-scroll">
+                <p id="modal-text">Descripción del servicio...</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#FORM" class="btn btn-primary btn-sm" onclick="closeModal()">Solicitar Cotización</a>
+            </div>
+        </div>
+    </div>
+    <section id="PROCESO" class="process container-section">
+        <h4 class="h4__title-process scroll-reveal">Método de trabajo</h4>
+        <div class="procces-1">
+            <div class="process-card scroll-reveal">
+                <span class="step-number">01</span>
+                <i class="fa-regular fa-clipboard icon-process"></i>
+                <h4>Recolección</h4>
+                <p>Cuestionario breve: objetivos, referencias visuales y contenidos.</p>
+            </div>
+            <div class="process-card scroll-reveal delay-100">
+                <span class="step-number">02</span>
+                <i class="fa-solid fa-palette icon-process"></i>
+                <h4>Diseño Mockup</h4>
+                <p>Prototipos visuales para validar estructura y estilo antes de programar.</p>
+            </div>
+            <div class="process-card scroll-reveal delay-200">
+                <span class="step-number">03</span>
+                <i class="fa-solid fa-screwdriver-wrench icon-process"></i>
+                <h4>Desarrollo</h4>
+                <p>Construcción funcional, responsive, accesible y optimizada.</p>
+            </div>
+            <div class="process-card scroll-reveal delay-300">
+                <span class="step-number">04</span>
+                <i class="fa-regular fa-file-code icon-process"></i>
+                <h4>Revisión</h4>
+                <p>Link de prueba para feedback y correcciones finales.</p>
+            </div>
+            <div class="process-card scroll-reveal delay-400">
+                <span class="step-number">05</span>
+                <i class="fa-solid fa-cloud-arrow-up icon-process"></i>
+                <h4>Lanzamiento</h4>
+                <p>Publicación en hosting, dominio SSL y entrega de accesos.</p>
+            </div>
+        </div>
+    </section>
+    <section class="cta__wrapper container-section scroll-reveal">
+        <div class="cta__container">
+            <h4 class="cta__title">¿Listo para despegar?</h4>
+            <p class="cta__subtitle">Aumenta tu presencia online con una página profesional y segura.</p>
+            <ul class="cta__beneficios">
+                <li><i class="fa-solid fa-check-circle"></i> Sitios 100% personalizados</li>
+                <li><i class="fa-solid fa-mobile-screen"></i> Diseño Responsive</li>
+                <li><i class="fa-brands fa-google"></i> SEO básico incluido</li>
+            </ul>
+            <div class="cta__actions">
+                <a class="btn btn-primary" href="#FORM">Quiero mi web</a>
+                <a class="btn btn-ghost" href="#MODELOS">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section container-section scroll-reveal" id="FORM">
+        <div class="contact-header">
+            <h5>Contacto</h5>
+            <p>Completá el formulario y empecemos tu proyecto.</p>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/mqarlyez" method="POST">
+            <div class="grid-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tunombre@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono / WhatsApp <span class="muted-note">(Opcional)</span></label>
+                    <input type="text" id="telefono" name="telefono" placeholder="+54 9 ...">
+                </div>
+
+                <div class="form-group">
+                    <label for="servicio">Servicio <span class="muted-note">(Requerido)</span></label>
+                    <div class="select-wrapper">
+                        <select id="servicio" name="servicio" required>
+                            <option value="" disabled selected>Seleccioná una opción</option>
+                            <option value="landing">Landing Page</option>
+                            <option value="blog">Blog</option>
+                            <option value="portafolio">Portafolio</option>
+                            <option value="negocios">Sitio Web de Negocios</option>
+                            <option value="tienda">Tienda en Línea</option>
+                            <option value="otro">Otro / Consulta general</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Contame un poco sobre tu proyecto..." required></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-submit btn btn-primary">Enviar mensaje <i class="fa-regular fa-paper-plane"></i></button>
+                <a class="btn btn-secondary" href="https://www.instagram.com/patagonia_webworks/" target="_blank" rel="noopener">
+                    <i class="fa-brands fa-instagram"></i> Contactar por Instagram
+                </a>
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container container-section-2">
+            <div class="footer-left">
+                <a href="#" class="logo footer-logo">Patagonia<span class="logo-accent">WebWorks</span></a>
+                <p>Desarrollo de Webs & Apps. Creamos soluciones digitales que impulsan negocios.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/patagonia_webworks/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-center">
+                <h6>Contacto Directo</h6>
+                <p><i class="fa-regular fa-envelope"></i> patagoniaweb0@gmail.com</p>
+                <p><i class="fa-brands fa-instagram"></i> Patagonia_Webworks</p>
+            </div>
+            <div class="footer-right">
+                <nav class="footer-nav">
+                    <a href="#main-header">INICIO</a>
+                    <a href="#MODELOS">SERVICIOS</a>
+                    <a href="#PROCESO">PROCESO</a>
+                    <a href="#FORM">CONTACTO</a>
+                </nav>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Patagonia WebWorks. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
